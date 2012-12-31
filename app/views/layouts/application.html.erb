@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VideoChattingApplication</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+
+    <div id="container">
+      <div id="header">
+        <h1>Video Party</h1>
+        <h3>[Start or join a video party, invite your friends but most of all have fun!]</h3>
+      </div>
+      <div id="content">
+        <%= yield %>
+      </div>
+      <div id="footer">
+        &copy; 2011, Melih Onvural - Distributed under MIT License
+      </div>
+    </div>
+
+
+
+  </body>
+</html>
