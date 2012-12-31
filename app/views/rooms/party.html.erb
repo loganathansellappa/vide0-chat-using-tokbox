@@ -1,12 +1,12 @@
-<div id="invitation">Invite your friends! Share the url of this page http://opentok-videoparty.heroku.com/party/<%= @room.id %></div>
+<div id="invitation">Invite your friends! Share the url of this page http://tokboxvideochat.herokuapp.com/party/<%= @room.id %></div>
 <div id="videobox">
 
 </div>
 <script src="http://static.opentok.com/v0.91/js/TB.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-	var apiKey = 8429092;
+	var apiKey =  22329432;
 	var sessionId = "<%= @room.sessionId %>";
-	var token = "<%= @tok_token %>";
+	var token = "<%= @opentok %>";
 
 	var session;
 
